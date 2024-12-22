@@ -1,0 +1,157 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+header {
+    background-color: #ebd376;
+    text-align: center;
+    height: 100vh;
+    position: relative;
+}
+
+h1 {
+    color: #333;
+}
+
+nav {
+    margin: 20px 0;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.main-content {
+    padding: 20px;
+}
+
+.burger-item {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px 0;
+    background-color: #fff;
+}
+
+.burger-item h2 {
+    margin: 0;
+    color: #ff6600;
+}
+
+.burger-item p {
+    color: #666;
+}
+
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+.header-top {
+    display: flex;
+    justify-content: center;
+    border-bottom: #ff6600 1px solid;
+}
+.header-content-empty {
+    flex: 1;
+}
+.header-content-title {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header-content-right-link {
+    flex: 1;
+    display: flex;
+    gap: 20px;
+    padding-right: 20px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.header-logo-container {
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    padding-left: 10px;
+    position: absolute;
+    top: 10px;
+}
+.header-logo {
+    width: 100px;
+    height: 100px;
+    transform: rotate(-30deg);
+}
+
+.header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.header-container-sub-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+
+
+.no-dots {
+    list-style: none;
+    padding-left: 0;
+    background-color: #ff6600;
+}
+
+.flex-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.box-layout {
+    width: 400px;
+    height: 400px;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.box-explain {
+    background-color: red;
+}
+
+
+section {
+    height: 100vh;
+    scroll-snap-align: start;
+}
+#menu {
+    height: 100vh;
+    background-color: #f8f8f8;
+}
+#about {
+    height: 100vh;
+    background-color: #ebd376;
+}
+#contact {
+    height: 100vh;
+    background-color: #fd8e8e;
+}
