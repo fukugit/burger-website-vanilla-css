@@ -5,6 +5,10 @@ body {
     background-color: #f8f8f8;
 }
 
+.wrapper {
+    padding-left: 10px;
+    padding-right: 10px;
+}
 header {
     background-color: #ebd376;
     text-align: center;
@@ -16,19 +20,7 @@ h1 {
     color: #333;
 }
 
-nav {
-    margin: 20px 0;
-}
 
-nav a {
-    margin: 0 15px;
-    text-decoration: none;
-    color: #333;
-}
-
-nav a:hover {
-    text-decoration: underline;
-}
 
 .main-content {
     padding: 20px;
@@ -103,6 +95,11 @@ footer {
     justify-content: center;
     align-items: center; 
 }
+.header-container-title {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
 .header-container-sub-menu {
     display: flex;
     justify-content: center;
@@ -112,32 +109,39 @@ footer {
 
 
 
-.no-dots {
-    list-style: none;
-    padding-left: 0;
-    background-color: #ff6600;
-}
-
-.flex-nav {
+.header-flex-nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 5px;
+    list-style: none;
+    padding-left: 0;
 }
 
 .box-layout {
-    width: 400px;
-    height: 400px;
-    background-color: antiquewhite;
+    width: calc(100% / 3);   /* 画面幅を3分割 */
+    height: auto;           /* 縦横比を維持 */
     display: flex;
     flex-direction: column;
     justify-content: center;
+    position: relative;
 }
-
-.box-explain {
-    background-color: red;
+.box-layout img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* This ensures the image covers the entire area without distortion */
 }
-
+.box-layout-overlay-text {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; /* Adjust text color as needed */
+    font-size: 24px; /* Adjust font size as needed */
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: Add background color with transparency */
+    padding: 10px; /* Optional: Add padding */
+    text-align: center;
+}
 
 section {
     height: 100vh;
