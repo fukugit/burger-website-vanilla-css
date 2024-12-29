@@ -143,6 +143,27 @@ footer {
     text-align: center;
 }
 
+.overlay-element {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    color: white; /* Adjust text color as needed */
+    font-size: 24px; /* Adjust font size as needed */
+    background-color: rgb(231, 80, 80); /* Optional: Add background color with transparency */
+    text-align: center;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.5s ease; /* Transition effect */
+}
+
+.box-layout:hover .overlay-element {
+    opacity: 1; /* Show element on hover */
+}
+
 section {
     height: 100vh;
     scroll-snap-align: start;
