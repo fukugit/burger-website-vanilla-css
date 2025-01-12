@@ -31,9 +31,14 @@ document.getElementById('menu-link').addEventListener('click', function(event) {
     document.querySelector('#menu').scrollIntoView({ behavior: 'smooth' })
 })
 
-document.getElementById('about-link').addEventListener('click', function(event) {
+document.getElementById('order-link').addEventListener('click', function(event) {
     event.preventDefault()
-    document.querySelector('#about').scrollIntoView({ behavior: 'smooth' })
+    document.querySelector('#order').scrollIntoView({ behavior: 'smooth' })
+})
+
+document.getElementById('contact-link').addEventListener('click', function(event) {
+    event.preventDefault()
+    document.querySelector('#contact').scrollIntoView({ behavior: 'smooth' })
 })
 
 const backToTopButton = document.getElementById('back-to-top');

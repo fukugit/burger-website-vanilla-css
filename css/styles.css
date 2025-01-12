@@ -10,7 +10,7 @@ body {
     padding-right: 10px;
 }
 header {
-    background-color: #ebd376;
+    background-color: #f9ecd2;
     text-align: center;
     height: 100vh;
     position: relative;
@@ -136,9 +136,8 @@ footer {
     top: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white; /* Adjust text color as needed */
-    font-size: 24px; /* Adjust font size as needed */
-    background-color: rgba(0, 0, 0, 0.5); /* Optional: Add background color with transparency */
+    color: rgb(213, 127, 40); /* Adjust text color as needed */
+    font-size: 40px; /* Adjust font size as needed */
     padding: 10px; /* Optional: Add padding */
     text-align: center;
 }
@@ -154,10 +153,11 @@ footer {
     left: 0;
     color: white; /* Adjust text color as needed */
     font-size: 24px; /* Adjust font size as needed */
-    background-color: rgb(231, 80, 80); /* Optional: Add background color with transparency */
+    background-color: rgb(231, 80, 80, 1.0); /* Optional: Add background color with transparency */
     text-align: center;
     opacity: 0; /* Initially hidden */
     transition: opacity 0.5s ease; /* Transition effect */
+    text-decoration: none; /* Remove underline */
 }
 
 .box-layout:hover .overlay-element {
