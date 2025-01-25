@@ -95,6 +95,11 @@ footer {
     justify-content: center;
     align-items: center; 
 }
+.menu-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .header-container-title {
     display: flex;
     justify-content: center;
@@ -162,6 +167,13 @@ footer {
 
 .box-layout:hover .overlay-element {
     opacity: 1; /* Show element on hover */
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 10px;
 }
 
 section {
